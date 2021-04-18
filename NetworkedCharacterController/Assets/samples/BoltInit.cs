@@ -119,8 +119,11 @@ namespace Bolt.Samples
 		{
 			GUILayout.BeginVertical();
 
+			print("hello");
+
 			foreach (string value in BoltScenes.AllScenes)
 			{
+				print(value);
 				if (SceneManager.GetActiveScene().name != value)
 				{
 					if (ExpandButton(value))
